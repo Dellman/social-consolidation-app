@@ -1,3 +1,28 @@
+## About the Project
+
+This project is the basis for implementing multiple social platforms to make managing and communicating with them all in one place.
+
+This app is built using React and is still in early phases. 
+
+The current implementation allows users to check information about a slack user in a workspace using the "Slack App" API.
+Users may also view channels and some of the recent messages. The "Read More" part of the "Slack App" API has not been implemented yet.
+Issues connecting will be added when implementing OAuth.
+
+In order to utilize this app as is, a slack channel is needed and an app needs to be installed (https://api.slack.com/apps?new_app=1).
+
+If you do not want to set it up, you may keep the OAuth token as is.
+
+Once the app has been made, give it the following permissions:
+-channels:history
+-channels:read
+-users:read
+
+then install and authorize the app.
+Place the key as the value for `SLACK_TOKEN` in the api_keys/key.js file.
+
+Lastly, install the dependencies using your preferred package manager's install command.
+Below are details of how you can run the app once those steps are done. `yarn` may be replaced with `npm`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
